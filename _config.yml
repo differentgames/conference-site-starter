@@ -1,0 +1,29 @@
+# Site settings
+title: Different Games Conference
+description: > # this means to ignore newlines until "url:"
+  Different Games Conference is an annual student and volunteer-lead conference
+  on diversity and inclusivity in games.
+url: "http://changeme.differentgames.org"
+twitter_username: differentgames
+tumblr_username: differentgamescollective
+
+# Build settings
+markdown: kramdown
+exclude:
+  - vendor
+  - deploy.sh
+  - README.md
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  talks:
+    output: true
+  nav_pages:
+    output: true
+  sessions:
+  games:
+    output: true
+    permalink: /arcade/:path/
+  sponsors:
